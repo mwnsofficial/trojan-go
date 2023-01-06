@@ -1,0 +1,14 @@
+proxies:
+- name: Trojan GO/WS (CDN)
+  server: IPCDN/BUGCDN.COM
+  port: 443
+  type: trojan
+  password: PASSWORD
+  network: ws
+  sni: SERVER.COM
+  skip-cert-verify: true
+  udp: true
+  ws-opts:
+    path: /PATH
+    headers:
+        Host: SERVER.COM
